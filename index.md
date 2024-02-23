@@ -17,3 +17,4 @@ It’s important to count individual chromosomes because as new ones form, ecDNA
 
 
 ## References
+1. <a align="center" href= "https://chemometec.com/industry/oncology/"> ChemoMetec (2023) </a>
