@@ -21,8 +21,6 @@ Semantic segmentation is what many previously developed models, like EcSeg, use 
 
 ## Results
 
-## Discussion
-
 ## Conclusion
 
 
