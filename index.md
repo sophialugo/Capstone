@@ -13,6 +13,10 @@ To study the link between ecDNA and chromosomes, we used publicly available imag
 ### Instance vs. Semantic Segmentation
 Semantic segmentation is what many previously developed models, like EcSeg, use to classify chromosomes. The fallback from semantic segmentation is that it works to identify the class of an object, but does not identify individual instances of the class. Instance segmentation works specifically to do this. It identifies individual instances of classes giving us the ability to count how many times an object is present in an image. In our case, it will count chromosomes. 
 
+<p align="center">
+    <img src="" alt="CNN" width="50%" margin-left="auto" margin-right="auto"/>
+</p>
+<a href= "https://www.folio3.ai/blog/semantic-segmentation-vs-instance-segmentation/"> Image Source </a>
 
 ## Results
 
