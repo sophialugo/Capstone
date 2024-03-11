@@ -4,6 +4,18 @@ Cancer cells have been shown to have genetic mutations that lead to uncontrolled
 
 It’s important to count individual chromosomes because as new ones form, ecDNA also replicates which means that the copy number of oncogenes grows. It’s also vital to be able to identify if new chromosomes have been created because we can get a sense of whether chromosomes are duplicated or fragmented, giving us more information on cancer cells and their growth.
 
+<figure>
+<p align="center">
+    <img src="assets/original.png" alt="Folio3" width="75%" margin-left="auto" margin-right="auto"/>
+
+<figure>
+<p align="left">
+    <img src="assets/contours.png" alt="Folio3" width="75%" margin-left="auto" margin-right="auto"/>
+
+<figure>
+<p align="right">
+    <img src="assets/connected_components.png" alt="Folio3" width="75%" margin-left="auto" margin-right="auto"/>
+
 ### What does our project aim to do?
 Our project aims to develope an advanced imaging system designed to accurately identify, segment, and count chromosomes within cell images. Recognizing the critical role that genetic mutations and extrachromosomal DNA (ecDNA) play in cancer development, our system will leverage instance segmentation techniques to overcome the limitations of current methods.
 
