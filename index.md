@@ -27,10 +27,21 @@ To study the link between ecDNA and chromosomes, we used publicly available imag
 
 ### Steps
  1. Process images with UNET to generate feature maps.
- 2. Generate bounding boxes using connected components.
- 3. Generate anchor boxes and compare against connected component boxes to find valid anchor points and centers.
- 4. Sample 100 true centers and 100 false centers to train and optimize RPN using generated anchor points.
-
+<figure>
+<p align="center">
+    <img src="assets/masked.png" alt="RPN" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
+ 3. Generate bounding boxes using connected components.
+ <figure>
+<p align="center">
+    <img src="assets/bounding boxes.png" alt="RPN" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
+ 4. Generate anchor boxes and compare against connected component boxes to find valid anchor points and centers.
+ <figure>
+<p align="center">
+    <img src="assets/bounding boxes.png" alt="RPN" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
+ 5. Sample 100 true centers and 100 false centers to train and optimize RPN using generated anchor points.
 <figure>
 <p align="center">
     <img src="assets/RPN_architecture.png" alt="RPN" width="25%" margin-left="auto" margin-right="auto"/>
@@ -55,17 +66,18 @@ Semantic segmentation is what many previously developed models, like EcSeg, use 
 - Our model demonstrated a high accuracy with 97% accuracy of true positives and 95% accuracy of true negatives. The false positives and false negatives are relatively low, at 4.9% and 2.5% respectively.
 - Despite high accuracy, our anchor boxes missed larger connected components due to lower IOUs with their bounding boxes.
 
-  <figure>
+<figure>
 <p align="center">
     <img src="assets/output.png" alt="Output" width="25%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
 
 <figure>
-<p align="left">
+<p align="center">
     <img src="assets/loss.png" alt="Loss" width="25%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
+
 <figure>
-<p align="left">
+<p align="center">
     <img src="assets/loss_per_epoch.png" alt="Loss per epoch" width="25%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
 
