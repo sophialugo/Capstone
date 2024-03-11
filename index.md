@@ -14,7 +14,7 @@ It’s important to count individual chromosomes because as new ones form, ecDNA
 
 <figure>
 <p align="right">
-    <img src="assets/connected_components.png" alt="Folio3" width="75%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/connected components.png" alt="Folio3" width="75%" margin-left="auto" margin-right="auto"/>
 
 ### What does our project aim to do?
 Our project aims to develope an advanced imaging system designed to accurately identify, segment, and count chromosomes within cell images. Recognizing the critical role that genetic mutations and extrachromosomal DNA (ecDNA) play in cancer development, our system will leverage instance segmentation techniques to overcome the limitations of current methods.
