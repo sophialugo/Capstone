@@ -6,21 +6,32 @@ It’s important to count individual chromosomes because as new ones form, ecDNA
 
 <figure>
 <p align="center">
-    <img src="assets/original.png" alt="Folio3" width="75%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/original.png" alt="Folio3" width="25%" margin-left="auto" margin-right="auto"/>
 
 <figure>
-<p align="left">
-    <img src="assets/contours.png" alt="Folio3" width="75%" margin-left="auto" margin-right="auto"/>
+<p align="center">
+    <img src="assets/contours.png" alt="Folio3" width="25%" margin-left="auto" margin-right="auto"/>
 
 <figure>
-<p align="right">
-    <img src="assets/connected components.png" alt="Folio3" width="75%" margin-left="auto" margin-right="auto"/>
-
+<p align="center">
+    <img src="assets/connected components.png" alt="Folio3" width="25%" margin-left="auto" margin-right="auto"/>
+<br>
+    
 ### What does our project aim to do?
 Our project aims to develope an advanced imaging system designed to accurately identify, segment, and count chromosomes within cell images. Recognizing the critical role that genetic mutations and extrachromosomal DNA (ecDNA) play in cancer development, our system will leverage instance segmentation techniques to overcome the limitations of current methods.
 
 ## Methods
 To study the link between ecDNA and chromosomes, we used publicly available images of cancer cells to train our models. These images, however, didn’t contain exclusively our cells of interest, metaphase cells, so we had to process the images to make them more applicable to our use case. To start, we process our images into single channel grayscale images that make it easier to perform image calculations on. From there, we, using a Regional Convolutional Neural Network, segment out the areas of the image which we are not interested in, as well as take crops of the broader regions of the chromosomes that we will process. Finally, we run the newly acquired images, the regions with the chromosomes, through a segmentation script that is able to identify overlapping regions while remaining accurate on areas where only one chromosome is present.
+
+### Steps
+ 1. Process images with UNET to generate feature maps.
+ 2. Generate bounding boxes using connected components.
+ 3. Generate anchor boxes and compare against connected component boxes to find valid anchor points and centers.
+ 4. Sample 100 true centers and 100 false centers to train and optimize RPN using generated anchor points.
+
+<figure>
+<p align="center">
+    <img src="assets/RPN_architecture.png" alt="Folio3" width="25%" margin-left="auto" margin-right="auto"/>
 
 ### Instance vs. Semantic Segmentation
 Semantic segmentation is what many previously developed models, like EcSeg, use to classify chromosomes. The fallback from semantic segmentation is that it works to identify the class of an object, but does not identify individual instances of the class. Instance segmentation works specifically to do this. It identifies individual instances of classes giving us the ability to count how many times an object is present in an image.
@@ -34,11 +45,6 @@ Semantic segmentation is what many previously developed models, like EcSeg, use 
 <a href= "https://www.folio3.ai/blog/semantic-segmentation-vs-instance-segmentation/"> Image Source </a>
 </figure>
 
-#### Steps
- 1. Process images with UNET to generate feature maps.
- 2. Generate bounding boxes using connected components.
- 3. Generate anchor boxes and compare against connected component boxes to find valid anchor points and centers.
- 4. Sample 100 true centers and 100 false centers to train and optimize RPN using generated anchor points.
 
 ## Results
 - Using binary-cross entropy loss in the RPN model, the loss converged from approximately 0.18 to 0.11. The trend shows a sharp decline initially, which then converges.
