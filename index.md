@@ -6,16 +6,18 @@ It’s important to count individual chromosomes because as new ones form, ecDNA
 
 <figure>
 <p align="center">
-    <img src="assets/original.png" alt="Folio3" width="25%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/original.png" alt="Original" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
 
 <figure>
 <p align="center">
-    <img src="assets/contours.png" alt="Folio3" width="25%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/contours.png" alt="Contours" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
 
 <figure>
 <p align="center">
-    <img src="assets/connected components.png" alt="Folio3" width="25%" margin-left="auto" margin-right="auto"/>
-<br>
+    <img src="assets/connected components.png" alt="Connected Components" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
     
 ### What does our project aim to do?
 Our project aims to develope an advanced imaging system designed to accurately identify, segment, and count chromosomes within cell images. Recognizing the critical role that genetic mutations and extrachromosomal DNA (ecDNA) play in cancer development, our system will leverage instance segmentation techniques to overcome the limitations of current methods.
@@ -31,7 +33,8 @@ To study the link between ecDNA and chromosomes, we used publicly available imag
 
 <figure>
 <p align="center">
-    <img src="assets/RPN_architecture.png" alt="Folio3" width="25%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/RPN_architecture.png" alt="RPN" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
 
 ### Instance vs. Semantic Segmentation
 Semantic segmentation is what many previously developed models, like EcSeg, use to classify chromosomes. The fallback from semantic segmentation is that it works to identify the class of an object, but does not identify individual instances of the class. Instance segmentation works specifically to do this. It identifies individual instances of classes giving us the ability to count how many times an object is present in an image.
@@ -51,6 +54,25 @@ Semantic segmentation is what many previously developed models, like EcSeg, use 
 - Over 10 epochs, our loss decreased from 0.14 to 0.11, indicating a consistent improvement in the model’s performance with each subsequent epoch.
 - Our model demonstrated a high accuracy with 97% accuracy of true positives and 95% accuracy of true negatives. The false positives and false negatives are relatively low, at 4.9% and 2.5% respectively.
 - Despite high accuracy, our anchor boxes missed larger connected components due to lower IOUs with their bounding boxes.
+
+  <figure>
+<p align="center">
+    <img src="assets/output.png" alt="Output" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
+
+<figure>
+<p align="left">
+    <img src="assets/loss.png" alt="Loss" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
+<figure>
+<p align="left">
+    <img src="assets/loss_per_epoch.png" alt="Loss per epoch" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
+
+<figure>
+<p align="center">
+    <img src="assets/confusion_matrix.png" alt="Matrix" width="25%" margin-left="auto" margin-right="auto"/>
+</p> </figure>
 
 
 ## Conclusion
