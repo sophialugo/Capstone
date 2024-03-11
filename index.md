@@ -22,9 +22,21 @@ Semantic segmentation is what many previously developed models, like EcSeg, use 
 <a href= "https://www.folio3.ai/blog/semantic-segmentation-vs-instance-segmentation/"> Image Source </a>
 </figure>
 
+#### Steps
+ 1. Process images with UNET to generate feature maps.
+ 2. Generate bounding boxes using connected components.
+ 3. Generate anchor boxes and compare against connected component boxes to find valid anchor points and centers.
+ 4. Sample 100 true centers and 100 false centers to train and optimize RPN using generated anchor points.
+
 ## Results
+- Using binary-cross entropy loss in the RPN model, the loss converged from approximately 0.18 to 0.11. The trend shows a sharp decline initially, which then converges.
+- Over 10 epochs, our loss decreased from 0.14 to 0.11, indicating a consistent improvement in the model’s performance with each subsequent epoch.
+- Our model demonstrated a high accuracy with 97% accuracy of true positives and 95% accuracy of true negatives. The false positives and false negatives are relatively low, at 4.9% and 2.5% respectively.
+- Despite high accuracy, our anchor boxes missed larger connected components due to lower IOUs with their bounding boxes.
+
 
 ## Conclusion
+While our model was able to predict with over 97% accuracy, the binary cross entropy loss was greater at 11.37%. This means that, while our model was accurate at predicting centers, it wasn’t absolutely confident while doing so.
 
 
 ## References
