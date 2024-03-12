@@ -11,7 +11,7 @@ header_pages:
 
 # gem "minima"
 theme: minima
-$ bundle
+# $ bundle
 
 # header_pages:
 #   - about.md
