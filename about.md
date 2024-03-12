@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-## Sophia Lugo
+# We are 4th year Data Science undergraduates at UC San Diego.
 
-## William Trang
+## Sophia Lugo: <a href="https://www.linkedin.com/in/sophia-lugo/">LinkedIn</a>
 
-## Niha
+## William Trang: <a href="url">LinkedIn</a>
+
+## Niha Malhotra: <a href="url">LinkedIn</a>
