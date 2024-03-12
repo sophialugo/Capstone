@@ -8,11 +8,11 @@ permalink: /about/
 
 ## Sophia Lugo
 <figure>
-<p align="center">
+<p align="left">
     <img src="assets/SophiaPhoto.png" alt="Sophia" width="40%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
-<center><a href="https://www.linkedin.com/in/sophia-lugo/">LinkedIn</a> </center> <br>
-<center>slugo@ucsd.edu</center>
+<a href="https://www.linkedin.com/in/sophia-lugo/">LinkedIn</a> <br>
+slugo@ucsd.edu
 
 ## William Trang
 <a href="https://www.linkedin.com/in/williamtrang/">LinkedIn</a> <br>
