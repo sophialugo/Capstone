@@ -67,15 +67,14 @@ Semantic segmentation is what many previously developed models, like EcSeg, use 
     <img src="assets/output.png" alt="Output" width="25%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
 
-<figure>
-<p align="center">
-    <img src="assets/loss.png" alt="Loss" width="25%" margin-left="auto" margin-right="auto"/>
-</p> </figure>
-
-<figure>
-<p align="center">
-    <img src="assets/loss_per_epoch.png" alt="Loss per epoch" width="25%" margin-left="auto" margin-right="auto"/>
-</p> </figure>
+<div class="row">
+  <div class="column">
+    <img src="assets/loss.png" alt="Loss" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="assets/loss_per_epoch.png" alt="Loss per epoch" style="width:100%">
+  </div>
+</div>
 
 <figure>
 <p align="center">
