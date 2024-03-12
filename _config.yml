@@ -9,7 +9,8 @@ header_pages:
   - about.md
   - portfolio.md
 
-gem "minima"
+# gem "minima"
+theme: minima
 $ bundle
 
 # header_pages:
