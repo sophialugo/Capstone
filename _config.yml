@@ -6,7 +6,6 @@
 # description: "UC San Diego, Halıcıoğlu Data Science Institute"
 
 gem "minima"
-theme: minima
 $ bundle
 
 header_pages:
