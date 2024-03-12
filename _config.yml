@@ -1,6 +1,6 @@
 theme: minima
 title: "Capstone"
-description: "Clearer Views for Cancer Research: Upgrading Chromosome Analysis"
+# description: "Clearer Views for Cancer Research: Upgrading Chromosome Analysis"
 header_pages:
   - about.md
   - Github.md
