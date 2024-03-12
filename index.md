@@ -12,7 +12,7 @@ It’s important to count individual chromosomes because as new ones form, ecDNA
     </figcaption>
 </p> </figure>
     
-### What does our project aim to do?
+## What does our project aim to do?
 Our project aims to develope an advanced imaging system designed to accurately identify and segment chromosomes within cell images. Recognizing the critical role that genetic mutations and extrachromosomal DNA (ecDNA) play in cancer development, our system will leverage instance segmentation techniques to overcome the limitations of current methods.
 
 ### Instance vs. Semantic Segmentation
