@@ -29,13 +29,13 @@ To study the link between ecDNA and chromosomes, we used publicly available imag
  1. Process images with UNET to generate feature maps.
 <figure>
 <p align="center">
-    <img src="assets/masked.png" alt="RPN" width="20%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/masked.png" alt="RPN" width="40%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
 
  2. Generate bounding boxes using connected components.
 <figure>
 <p align="center">
-    <img src="assets/bounding boxes.png" alt="RPN" width="20%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/bounding boxes.png" alt="RPN" width="40%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
 
  3. Generate anchor boxes and compare against connected component boxes to find valid anchor points and centers.
@@ -43,7 +43,7 @@ To study the link between ecDNA and chromosomes, we used publicly available imag
  4. Sample 100 true centers and 100 false centers to train and optimize RPN using generated anchor points.
 <figure>
 <p align="center">
-    <img src="assets/RPN_architecture.png" alt="RPN" width="25%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/RPN_architecture.png" alt="RPN" width="35%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
 
 ### Instance vs. Semantic Segmentation
