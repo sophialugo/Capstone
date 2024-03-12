@@ -5,9 +5,13 @@
 # title: "Clearer Views for Cancer Research: Upgrading Chromosome Analysis"
 # description: "UC San Diego, Halıcıoğlu Data Science Institute"
 
-gem "minima"
-$ bundle
-
 header_pages:
   - about.md
   - portfolio.md
+
+gem "minima"
+$ bundle
+
+# header_pages:
+#   - about.md
+#   - portfolio.md
