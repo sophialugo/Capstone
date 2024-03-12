@@ -6,7 +6,9 @@ permalink: /about/
 
 # We are 4th year Data Science undergraduates at UC San Diego.
 
-## Sophia Lugo: <a href="https://www.linkedin.com/in/sophia-lugo/">LinkedIn</a>
+## Sophia Lugo: 
+<a href="https://www.linkedin.com/in/sophia-lugo/">LinkedIn</a>
+slugo@ucsd.edu
 
 ## William Trang: <a href="url">LinkedIn</a>
 
