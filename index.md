@@ -31,13 +31,16 @@ To study the link between ecDNA and chromosomes, we used publicly available imag
 <p align="center">
     <img src="assets/masked.png" alt="RPN" width="20%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
- 3. Generate bounding boxes using connected components.
- <figure>
+
+ 2. Generate bounding boxes using connected components.
+<figure>
 <p align="center">
     <img src="assets/bounding boxes.png" alt="RPN" width="20%" margin-left="auto" margin-right="auto"/>
 </p> </figure>
- 4. Generate anchor boxes and compare against connected component boxes to find valid anchor points and centers.
- 5. Sample 100 true centers and 100 false centers to train and optimize RPN using generated anchor points.
+
+ 3. Generate anchor boxes and compare against connected component boxes to find valid anchor points and centers.
+
+ 4. Sample 100 true centers and 100 false centers to train and optimize RPN using generated anchor points.
 <figure>
 <p align="center">
     <img src="assets/RPN_architecture.png" alt="RPN" width="25%" margin-left="auto" margin-right="auto"/>
