@@ -9,3 +9,4 @@ theme: minima
 
 header_pages:
   - about.md
+  - Github.md
