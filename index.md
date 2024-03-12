@@ -67,21 +67,34 @@ Semantic segmentation is what many previously developed models, like EcSeg, use 
 
 <figure>
 <p align="center">
-    <img src="assets/output.png" alt="Output" width="25%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/output.png" alt="Output" width="40%" margin-left="auto" margin-right="auto"/>
+     <figcaption> <strong>Output</strong>
+         The purple marks represent the valid chromosome centers our model predicted from our anchor boxes, while the blue shows the chromsomes of the original image. Some anchor boxes didn’t produce a valid center due to large overlapping chromosomes, producing large connected components.
+     </figcaption>
 </p> </figure>
-
-<div class="row">
-  <div class="column>
-    <img src="assets/loss.png" alt="Loss" style="width:40%">
-  </div>
-  <div class="column">
-    <img src="assets/loss_per_epoch.png" alt="Loss per epoch" style="width:40%">
-  </div>
-</div>
 
 <figure>
 <p align="center">
-    <img src="assets/confusion_matrix.png" alt="Matrix" width="25%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/loss.png" alt="Loss" style="width:40%">
+    <figcaption> <strong>Loss per Step</strong> 
+    The training loss overall decreases.
+    </figcaption>
+</p> </figure>
+
+<figure>
+<p align="center">
+    <img src="assets/loss_per_epoch.png" alt="Loss per epoch" style="width:40%">
+    <figcaption> <strong>Training Loss per Epoch</strong> 
+    The training loss per epoch confidently decreases over each epoch.
+    </figcaption>
+</p> </figure>
+
+<figure>
+<p align="center">
+    <img src="assets/confusion_matrix.png" alt="Matrix" width="40%" margin-left="auto" margin-right="auto"/>
+    <figcaption> <strong>Confusion Matrix</strong> 
+    Our model demonstrated a high accuracy with 97% accuracy of true positives and 95% accuracy of true negatives.
+    </figcaption>
 </p> </figure>
 
 
