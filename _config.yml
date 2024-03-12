@@ -1,6 +1,9 @@
-remote_theme: pages-themes/slate@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+# remote_theme: pages-themes/slate@v0.2.0
+# plugins:
+# - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-title: "Clearer Views for Cancer Research: Upgrading Chromosome Analysis"
-description: "UC San Diego, Halıcıoğlu Data Science Institute"
+# title: "Clearer Views for Cancer Research: Upgrading Chromosome Analysis"
+# description: "UC San Diego, Halıcıoğlu Data Science Institute"
+
+gem "minima"
+$ bundle
