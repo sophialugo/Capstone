@@ -6,17 +6,10 @@ It’s important to count individual chromosomes because as new ones form, ecDNA
 
 <figure>
 <p align="center">
-    <img src="assets/original.png" alt="Original" width="25%" margin-left="auto" margin-right="auto"/>
-</p> </figure>
-
-<figure>
-<p align="center">
-    <img src="assets/contours.png" alt="Contours" width="25%" margin-left="auto" margin-right="auto"/>
-</p> </figure>
-
-<figure>
-<p align="center">
-    <img src="assets/connected components.png" alt="Connected Components" width="25%" margin-left="auto" margin-right="auto"/>
+    <img src="assets/image_processing.png" alt="Original" width="25%" margin-left="auto" margin-right="auto"/>
+    <figcaption> <strong>Processing</strong> 
+    Starting with the original image, we can visualize contours of the chromsomes in the cell, then apply colors to be able to see which are connected.
+    </figcaption>
 </p> </figure>
     
 ### What does our project aim to do?
