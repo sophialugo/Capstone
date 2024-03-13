@@ -1,4 +1,4 @@
-# Clearer Views for Cancer Research: Upgrading Chromosome Analysis 
+# <b>Clearer Views for Cancer Research: Upgrading Chromosome Analysis </b>
 ## Why should we care about chromosome analysis?
 Cancer cells have been shown to have genetic mutations that lead to uncontrolled cell division that can often lead to the creation of tumors (ChemoMetec). This happens through oncogenes, a mutated gene that has the potential to turn cancerous, that is carried in extrachromosomal DNA, also known as ecDNA (ChemoMetec). This tells us that cell research is vital to the knowledge and understanding of cancer. The analyzing of cells, though, is often tedious, time-consuming, and prone to human error. 
 
