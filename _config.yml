@@ -1,7 +1,7 @@
 title: "Capstone"
 theme: minima
 
-gem 'jekyll-titles-from-headings'
+# gem 'jekyll-titles-from-headings'
 plugins:
   - jekyll-titles-from-headings
 titles_from_headings:
