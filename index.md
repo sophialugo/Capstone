@@ -99,7 +99,9 @@ To study the link between ecDNA and chromosomes, we used publicly available imag
 
 
 ## Conclusion
-While our model was able to predict with over 97% accuracy, the binary cross entropy loss was greater at 11.37%. This means that, while our model was accurate at predicting centers, it wasn’t absolutely confident while doing so.
+While our model was able to predict with 97% true positive accuracy, 95% true negative accuracy, and a BCE loss of 0.11. These show confidence in prediciting chromsomes centers from the DAPI stained images. 
+
+Further improvements could be made like having hand annotated true labels for better results, having the output give a chromosome count, and evalutating if there is a correlation between high chromsomes numbers and oncogenes in cancer cell images. Though there is still more work to be done, this is a step in the right direction and provides yet another foundation for researchers to build on. The exploration of chromosomes in cancerous cells is extremely important and this model provides an easy and faster way to do so. 
 
 
 ## References
