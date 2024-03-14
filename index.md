@@ -63,7 +63,7 @@ To study the link between ecDNA and chromosomes, we used publicly available imag
 <figure>
 <p align="center">
     <img src="assets/output.png" alt="Output" width="40%" margin-left="auto" margin-right="auto"/>
-     <figcaption> <strong>Output</strong>
+     <figcaption> <strong>Output Image</strong>
          The purple marks represent the valid chromosome centers our model predicted from our anchor boxes, while the blue shows the chromsomes of the original image. Some anchor boxes didn’t produce a valid center due to large overlapping chromosomes, producing large connected components.
      </figcaption>
 </p> </figure>
